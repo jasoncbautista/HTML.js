@@ -2,9 +2,7 @@
 
 ## Overview:
 
-A uper simple template fetching toolkit, meant to work with external "partial templates", in
-both production and dev enviroments using a templating engine such as underscore
-
+A super simple template fetching toolkit, meant to work with partials"/templates, in both production and dev environments using a templeting engine such as underscore.
 
 # Deps:
 
