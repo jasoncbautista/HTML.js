@@ -32,3 +32,4 @@ You can use underscore by default or hook up your own templating system.
 
 ### TODO:
 Open source compiler program for template files.
+[ ] example folder with an index.html and a few exampe templates
