@@ -31,3 +31,27 @@ You can use underscore by default or hook up your own templating system.
 ### TODO:
 Open source compiler program for template files.
 [ ] example folder with an index.html and a few exampe templates
+
+[ ] html_compiler.py 
+[ ]  just take params , or env variables
+
+[ ] reads files in single directory , eventually we might want recurive
+[ ] include a lazy loading directory too...
+so
+/tempaltes/partials
+/tempaltes/lazyLoadPartials
+
+
+index.html
+-----------------------
+...
+
+<div class="html-include-templates-lazy-load">
+<!-- priamry set of templates-->
+</div>
+
+
+
+
+
+
