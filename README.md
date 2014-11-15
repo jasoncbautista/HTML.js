@@ -6,6 +6,10 @@ A uper simple template fetching toolkit, meant to work with external "partial te
 both production and dev enviroments using a templating engine such as underscore
 
 
+# Deps:
+
+jQuery
+underscore
 
 # Soft Depencencies:
 
@@ -26,3 +30,5 @@ You can use underscore by default or hook up your own templating system.
 
 ```
 
+### TODO:
+Open source compiler program for template files.
