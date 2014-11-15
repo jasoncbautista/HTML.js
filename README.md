@@ -44,14 +44,22 @@ so
 
 index.html
 -----------------------
+```
 ...
 
 <div class="html-include-templates-lazy-load">
-<!-- priamry set of templates-->
+<!-- This is where we will append your tempaltes, -->
+<!-- With:
+<div id="tempalte-name"> 
+--cotents of template file --
+ </div>-->
+
+
 </div>
 
 
 
 
+```
 
 
