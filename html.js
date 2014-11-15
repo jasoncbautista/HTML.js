@@ -11,7 +11,12 @@
 // HTML.getOneTimeTemplate("#example-template-remote", {name: "hi"})
 
 
+
     var HTML = HTML || {};
+    
+    // Example is_dev / local env (which should load the templates from remote
+    
+    HTML._debug_enabled = true;
 
     // IMPORTANT:
     // Reusuable templates  that live in index.html should live inside the /partials/ folder from now on....
@@ -24,15 +29,25 @@
     // Great: mySimpleName
     HTML.getTemplateString = function(template_name){
         // TODO: check if template is in index, if so it is messing things up
+
         if (!HTML.isValidTemplateName(template_name)) {
            throw new Error("invalid template name: " + template_name);
         }
         // First we try to get the template by id locally:
 
         var template_string = $("#" + template_name).html();
+        
         if (!_.exists(template_string)){
             template_string =   HTML._getRemote(template_name);
+        } else {
+            if(HTML._debug_enabled){
+                // This means you are on dev mode but are conflicting with something in 
+                // your index page. 
+               console.log("You tried to load a template that alreay exists on the page.");
+
+            }
         }
+
         return template_string;
     };
 
